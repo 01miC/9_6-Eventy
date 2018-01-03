@@ -19,15 +19,11 @@ add.addEventListener('click', function(e) {
 
     var addSpan = document.getElementById('addSpan');
 addSpan.addEventListener('click', function(e) {
-    var  createSpan = ulList.childNodes;
-    for (var i=0; i < createSpan.length; i++) {
+    var  createSpan = ulList.children;
+    for (var i=0; i < liList.length; i++) {
         createSpan[i].innerHTML = "<span class='badge'>" + i + "</span> item";
 
     }
-
-
-    
-
 });
   
     
